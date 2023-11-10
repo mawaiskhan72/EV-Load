@@ -78,7 +78,7 @@ function navbar() {
 
 </div>
     </div>
-   <div className='pt-16   pb-24 items-center flex justify-center' >
+   <div className='pt-16 pb-20 items-center flex justify-center' >
    <img src={Slider} />
    </div>
     

@@ -6,16 +6,14 @@ import Three from '../Images/three.svg'
 
 function Howitwork() {
   return (
-    <div className='bg-[#f4f4f4] pt-16 '> 
-
-
+    <div className='bg-[#f4f4f4] mt-[450px] '> 
 
 <div className="flex justify-center ">
-      <div className="flex-1 h-px bg-gray-300 mt-3"></div>
-      <div class=" bg-white rounded-[200px] w-[150px] cursor-pointer">
+      <div className="flex-1 h-px bg-gray-300 mt-4"></div>
+      <div class=" bg-white rounded-[200px] w-[150px] pt-1 pb-1 cursor-pointer">
 <p class="text-center font-bold "><span>How It </span><span class="text-[#52f3b8]">Works</span></p>
 </div>
-      <div className="flex-1 h-px bg-gray-300 mt-3"></div>
+      <div className="flex-1 h-px bg-gray-300 mt-4"></div>
     </div>
 
 <div className='flex pt-20'>
