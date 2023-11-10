@@ -36,13 +36,14 @@ function Herosection() {
         <img className='absolute right-12  z-50 top-12 w-[750px] h-[275px]' src={Meter}/>
       </div>
 
-      <div className='w-[30%] absolute right-0 h-[370px] bg-[#3fa780] pl-4 pb-4 rounded-l-[35px]'>
+      <div className='w-[30%] absolute right-0 h-[370px] bg-[#3fa780] pl-4 pb-4 rounded-l-[45px]'>
       </div>
+      
     </div>
 
     <div className='flex justify-center relative lg:mt-[500px]'>
 
-    <div className='w-[30%] absolute left-0 h-[370px] bg-[#3fa780] pl-4 pb-4 rounded-r-[35px]'>
+    <div className='w-[30%] absolute left-0 h-[370px] bg-[#3fa780] pl-4 pb-4 rounded-r-[45px]'>
       </div>
 
          <div>
