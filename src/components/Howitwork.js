@@ -42,18 +42,20 @@ function Howitwork() {
   </div>
 </div>
 
-<div className='flex relative pl-56 gap-5 pt-16'>
+<div className='flex relative pl-44 gap-5 pt-16'>
   <div>
   <img className='pt-10 w-28 ' src={Three}/>
   </div>
   <div>
-  <img className='absolute top-[120px] left-[330px]' src={Tick}/>
+  <img className='absolute top-[110px] left-[283px]' src={Tick}/>
   </div>
   <div className='bg-white rounded-2xl py-6 px-8 w-[480px]'>
   <p className='font-bold text-[23px]'>Receive NEC-compliant Electrical Load <br/> <span className='text-[#41a983]'>Study computation</span></p>
   <p className='pt-2 text-[14px]'>Reduce interconnection times by leveraging our extensive <br/>reports. Explore the optimal technologies for your EV charging <br/>ifrastructure, check the balance of system costs.</p>
   </div>
 </div>
+
+<div class="border-t border-green-700 mt-12 mb-14"></div>
 
     </div>
   )
