@@ -84,7 +84,7 @@ function navbar() {
 
 </div>
     </div>
-  <Marqu  ee>
+  <Marquee>
     <div className='flex justify-center pt-14 pb-16 space-x-20'>
     <img src={Sliderimg1} />
     <img src={Sliderimg2} />
@@ -93,7 +93,7 @@ function navbar() {
     <img src={Sliderimg5} />
     <img src={Sliderimg6} />
 </div>
-  </Marqu>
+  </Marquee>
 
     
     </div>
