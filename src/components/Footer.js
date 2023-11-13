@@ -8,7 +8,7 @@ function Footer() {
   return (
 
     <div>
-    <div class="bg-[#f5f5f5] flex justify-center pt-10 pb-28 gap-32">
+    <div class="flex justify-center pt-10 pb-28 gap-32">
 
 <div>
     <div class="">
@@ -18,15 +18,15 @@ function Footer() {
     <p class="pt-3">Our Al-powered software accelerates scalable, cost- efficient <br/> charging and storage infrastructure deployment. Gain a <br/> competitive edge on the future of electric mobility.</p>
 </div>
 
-<div className='bg-black w-[510px] rounded-3xl relative z-20'>
+<div className='bg-black w-[510px] rounded-3xl relative z-8'>
 
 <div className='text-white py-8 pl-60'>
   <p>Amet minim mollit non deserunt <br/> ullamco est sit aliqua dolor do <br/> amet sint. Velit officia consequat <br/> duis enim velit mollit.</p>
   <p className='text-[#b4b4b4] pt-3'>Elisa Grant</p>
   <p className='text-[#b4b4b4]'>Legacy Solutions Engineer</p>
   <img className='absolute left-6 bottom-14' src={aboutus1} />
-  <img className='absolute bottom-44 left-[410px]' src={aboutus2} />
-  <img className='absolute top-28 right-64 bottom-0' src={aboutus3} />
+  <img className='absolute bottom-44 left-[410px] -z-40' src={aboutus2} />
+  <img className='absolute top-28 right-[270px] bottom-0 -z-40' src={aboutus3} />
 </div>
 </div>
     </div>

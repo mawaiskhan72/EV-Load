@@ -10,7 +10,7 @@ function Howitwork() {
 
 <div className="flex justify-center ">
       <div className="flex-1 h-px bg-gray-300 mt-5"></div>
-      <div class=" bg-white rounded-[200px] w-[230px]  cursor-pointer">
+      <div class=" bg-white rounded-[200px] w-[230px] border-[#4eb48e] border  cursor-pointer">
 <p class="text-center font-bold text-[28px]"><span>How It </span><span class="text-[#52f3b8]">Works</span></p>
 </div>
       <div className="flex-1 h-px bg-gray-300 mt-5"></div>

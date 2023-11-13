@@ -4,8 +4,14 @@ import Logo from '../Images/logo.svg'
 import Icon from '../Images/icon.svg'
 import Canada from '../Images/CA.svg'
 import US from '../Images/US.svg'
+import Sliderimg1 from '../Images/sliderimg1.svg'
+import Sliderimg2 from '../Images/sliderimg2.svg'
+import Sliderimg3 from '../Images/sliderimg3.svg'
+import Sliderimg4 from '../Images/sliderimg4.svg'
+import Sliderimg5 from '../Images/sliderimg5.svg'
+import Sliderimg6 from '../Images/sliderimg6.svg'
 import Machines from '../Images/machines.svg'
-import Slider from '../Images/slider.svg'
+import Marquee from "react-fast-marquee";
 
 function navbar() {
   return (  
@@ -78,9 +84,17 @@ function navbar() {
 
 </div>
     </div>
-   <div className='pt-16 pb-20 items-center flex justify-center' >
-   <img src={Slider} />
-   </div>
+  <Marqu  ee>
+    <div className='flex justify-center pt-14 pb-16 space-x-20'>
+    <img src={Sliderimg1} />
+    <img src={Sliderimg2} />
+    <img src={Sliderimg3} />
+    <img src={Sliderimg4} />
+    <img src={Sliderimg5} />
+    <img src={Sliderimg6} />
+</div>
+  </Marqu>
+
     
     </div>
 
