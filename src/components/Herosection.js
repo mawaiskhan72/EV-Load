@@ -4,6 +4,7 @@ import Cross from '../Images/cross-circle.svg'
 import Meter from '../Images/meter.svg'
 import Meter2 from '../Images/meter2.svg'
 import Tic from '../Images/tic.svg'
+import Line from '../Images/line.svg'
 
 function Herosection() {
   return (
@@ -41,7 +42,13 @@ function Herosection() {
       
     </div>
 
-    <div className='flex justify-center relative lg:mt-[500px]'>
+    
+
+    <div className='z-50 mt-[320px] flex justify-center w-[38%] mx-auto'>
+  <img src={Line} alt='' />
+</div>
+
+    <div className='flex justify-center relative lg:mt-[-54px]'>
 
     <div className='w-[30%] absolute left-0 h-[370px] bg-[#3fa780] pl-4 pb-4 rounded-r-[45px]'>
       </div>
@@ -49,7 +56,6 @@ function Herosection() {
          <div>
         <img className='absolute left-12 z-50 top-14 w-[750px] h-[275px]' src={Meter2}/>
       </div>
-
       
       <div className='hero default2 pl-[240px] ml-56 py-12 absolute'>
       <p class="text-white text-[15px] font-family-Montserrat text-capitalize ">Benefits</p>
