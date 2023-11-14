@@ -20,13 +20,16 @@ function partnering() {
         <div className="flex-1 h-px bg-gray-300 mt-5"></div>
       </div>
 
-      <div className="max-w-[1220px] mx-auto pt-16">
+      <div className="max-w-[1250px] mx-auto pt-16">
         <div className="grid grid-cols-4 gap-12">
-          
           <div className="w-full">
             <img src={Imgone} />
-            <p className="text-[#4bac88] font-bold pt-2 text-[25px]">EV Charging<span className="text-black">Infrastructure Developers</span>
+            <p className="text-[#4bac88] font-bold pt-2 text-[25px]">
+              EV Charging{" "}
             </p>
+
+            <span className="text-black font-bold text-[23px] w-full">Infrastructure Developers</span>
+
             <p className="pt-2 text-[16px] pe-6">
               Leading the charge in creating a sustainable EV charging
               infrastructure worldwide.
@@ -40,10 +43,12 @@ function partnering() {
 
           <div className="w-full">
             <img src={Imgtwo} />
-            <p className="text-[#4bac88] font-bold pt-2 text-[25px]">Energy Storage <span className="text-black">Developers</span>
+            <p className="text-[#4bac88] font-bold pt-2 text-[23px]">
+              Energy Storage <span className="text-black">Developers</span>
             </p>
             <p className="pt-2 text-[16px] pe-6">
-            Innovative energy storage developers powering a sustainable future for electric vehicle charging. 
+              Innovative energy storage developers powering a sustainable future
+              for electric vehicle charging.
             </p>
 
             <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
@@ -54,11 +59,11 @@ function partnering() {
 
           <div className="w-full">
             <img src={Imgthree} />
-            <p className="text-black font-bold pt-2 text-[25px]">
-            Utilities
-            </p>
+            <p className="text-black font-bold pt-2 text-[23px]">Utilities</p>
             <p className="pt-2 text-[16px]">
-            Your one-stop source for real-time EV charging data, rates, and availability to help optimize your electric vehicle <br/> charging.
+              Your one-stop source for real-time EV charging data, rates, and
+              availability to help optimize your electric vehicle <br />{" "}
+              charging.
             </p>
 
             <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
@@ -70,10 +75,12 @@ function partnering() {
           <div className="w-full">
             <img src={Imgfour} />
             <p className="text-[#4bac88] font-bold pt-2 text-[25px]">
-            Infrastructure<span className="text-black"> Finance Partners</span>
-            </p>
-            <p className="pt-2 text-[16px] pe-">
-            Connecting EV owners to state and federal funding agencies for efficient charging.
+              Infrastructure </p>
+              <p className="text-black font-bold text-[22px]"> Finance Partners</p>
+            
+            <p className="pt-2 text-[16px] ">
+              Connecting EV owners to state and federal funding agencies for
+              efficient charging.
             </p>
 
             <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
@@ -82,12 +89,15 @@ function partnering() {
             </div>
           </div>
 
-
           <div className="w-full">
             <img src={Imgfive} />
-            <p className="text-[#4bac88] text-[25px] font-bold pt-2">Engineering <span className="text-black">Firms</span> </p>
+            <p className="text-[#4bac88] text-[26px] font-bold pt-2">
+              Engineering <span className="text-black">Firms</span>{" "}
+            </p>
             <p className="pt-2 text-[16px]">
-            Top engineering firms specializing in electric vehicle infrastructure, innovation, and sustainable energy solutions. Leading the EV revolution.
+              Top engineering firms specializing in electric vehicle
+              infrastructure, innovation, and sustainable energy solutions.
+              Leading the EV revolution.
             </p>
 
             <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
@@ -98,9 +108,12 @@ function partnering() {
 
           <div className="w-full">
             <img src={Imgsix} />
-            <p className="text-[#4bac88] gap-2 text-[25px] font-bold pt-2">Permitting<span className="text-black"> Authorities</span> </p>
+            <p className="text-[#4bac88] gap-2 text-[25px] font-bold pt-2">
+              Permitting<span className="text-black"> Authorities</span>{" "}
+            </p>
             <p className="pt-2 text-[16px]">
-            Connect with local permitting authorities for streamlined EV charging infrastructure approval and compliance guidance.
+              Connect with local permitting authorities for streamlined EV
+              charging infrastructure approval and compliance guidance.
             </p>
 
             <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
@@ -111,9 +124,12 @@ function partnering() {
 
           <div className="w-full">
             <img src={Imgseven} />
-            <p className="text-[#4bac88] text-[25px] font-bold pt-2">Business<span className="text-black"> Owners</span> </p>
+            <p className="text-[#4bac88] text-[25px] font-bold pt-2">
+              Business<span className="text-black"> Owners</span>{" "}
+            </p>
             <p className="pt-2 text-[16px]">
-            Connect with local permitting authorities for streamlined EV charging infrastructure approval and compliance guidance.
+              Connect with local permitting authorities for streamlined EV
+              charging infrastructure approval and compliance guidance.
             </p>
 
             <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
@@ -124,9 +140,13 @@ function partnering() {
 
           <div className="w-full">
             <img src={Imgeight} />
-            <p className="text-[#4bac88] text-[25px] font-bold pt-2">Fleet<span className="text-black"> Managers</span> </p>
+            <p className="text-[#4bac88] text-[25px] font-bold pt-2">
+              Fleet<span className="text-black"> Managers</span>{" "}
+            </p>
             <p className="pt-2 text-[16px]">
-            Expert fleet managers optimizing electric vehicle operations, enhancing efficiency, and promoting sustainable transportation on our website.
+              Expert fleet managers optimizing electric vehicle operations,
+              enhancing efficiency, and promoting sustainable transportation on
+              our website.
             </p>
 
             <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
@@ -136,7 +156,7 @@ function partnering() {
           </div>
         </div>
       </div>
-      <div class="border-t border-green-700 mt-12 mb-14"></div> 
+      <div class="border-t border-green-700 mt-12 mb-14"></div>
     </div>
   );
 }

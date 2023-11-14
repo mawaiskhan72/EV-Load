@@ -4,6 +4,7 @@ import Logo from '../Images/logo.svg'
 import Icon from '../Images/icon.svg'
 import Canada from '../Images/CA.svg'
 import US from '../Images/US.svg'
+import Vector from '../Images/Vector.svg'
 import Sliderimg1 from '../Images/sliderimg1.svg'
 import Sliderimg2 from '../Images/sliderimg2.svg'
 import Sliderimg3 from '../Images/sliderimg3.svg'
@@ -17,7 +18,7 @@ function navbar() {
   return (  
 
 <div>
-<div className='default1'>
+<div className='default1 relative z-10'>
     <div className='flex justify-center gap-14 pt-16'>
       <div className='flex gap-32'>
   <div>
@@ -78,14 +79,18 @@ function navbar() {
 </div>
 
 <div>
-<img  className='pt-20 pb-12 ' src={Machines}/>
+<img  className='pt-20 pb-12 z-10' src={Machines}/>
+</div>
+
+<div>
+  <img className='absolute w-60 -z-40 top-48 right-60' src={Vector} />
 </div>
 
 
 </div>
     </div>
   <Marquee>
-    <div className='flex justify-center pt-14 pb-16 space-x-20'>
+    <div className='flex justify-center pt-16 pb-16 space-x-20'>
     <img src={Sliderimg1} />
     <img src={Sliderimg2} />
     <img src={Sliderimg3} />
