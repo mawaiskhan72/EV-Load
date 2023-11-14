@@ -56,8 +56,8 @@ function navbar() {
 
       <div className='flex pt-2'>
       <p className='font-semi-bold text-[40px] text-black'>And <span className='font-bold text-[40px] text-black'>Permitting In</span></p>
-      <img className='pt-[18px]' src={Canada}/>
-      <img className='pt-[18px]' src={US}/>
+      <img className='pt-[16px]' src={Canada}/>
+      <img className='pt-[16px]' src={US}/>
       </div>
 
       <div>

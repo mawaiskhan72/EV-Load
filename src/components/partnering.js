@@ -11,7 +11,7 @@ import Imgeight from "../Images/imgeight.svg";
 
 function partnering() {
   return (
-    <div className="bg-[#f5f5f5] pt-2 pb-16">
+    <div className="bg-[#f5f5f5] pt-16 pb-16">
       <div className="flex justify-center">
         <div className="flex-1 h-px bg-gray-300 mt-5"></div>
         <div class=" bg-white rounded-[200px] w-[230px] cursor-pointer border border-[#4eb48e] ">
