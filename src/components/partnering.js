@@ -20,8 +20,8 @@ function partnering() {
         <div className="flex-1 h-px bg-gray-300 mt-5"></div>
       </div>
 
-      <div className="max-w-[1250px] mx-auto pt-16">
-        <div className="grid grid-cols-4 gap-12">
+      <div className="max-w-[1250px] mx-auto lg:pl-10 pt-20">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6 xl:gap-8">
           <div className="w-full">
             <img src={Imgone} />
             <p className="text-[#4bac88] font-bold pt-2 text-[25px]">
@@ -30,7 +30,7 @@ function partnering() {
 
             <span className="text-black font-bold text-[23px] w-full">Infrastructure Developers</span>
 
-            <p className="pt-2 text-[16px] pe-6">
+            <p className="pt-2 text-[16px]">
               Leading the charge in creating a sustainable EV charging
               infrastructure worldwide.
             </p>
@@ -44,8 +44,8 @@ function partnering() {
           <div className="w-full">
             <img src={Imgtwo} />
             <p className="text-[#4bac88] font-bold pt-2 text-[23px]">
-              Energy Storage <span className="text-black">Developers</span>
-            </p>
+              Energy Storage</p>
+              <p className="text-black font-bold text-[23px]">Developers</p>
             <p className="pt-2 text-[16px] pe-6">
               Innovative energy storage developers powering a sustainable future
               for electric vehicle charging.

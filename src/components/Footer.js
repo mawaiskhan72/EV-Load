@@ -8,20 +8,20 @@ function Footer() {
   return (
 
     <div>
-    <div class="flex justify-center pt-10 pb-28 gap-32">
+    <div class="lg:flex justify-center pb-28 gap-24">
 
-<div>
-    <div class="">
+<div className='pt-24' >
+    <div>
     <p class=" font-family-Montserrat text-black font-semibold">CUSTOMER STORIES</p>
         <p class="text-[34px] pt-1"><span class="text-black font-bold font-family-Montserrat">What Our Partners Said </span><span class="font-bold text-[#51b792]">About Us.</span></p>
     </div>
     <p class="pt-3">Our Al-powered software accelerates scalable, cost- efficient <br/> charging and storage infrastructure deployment. Gain a <br/> competitive edge on the future of electric mobility.</p>
 </div>
 
-<div className='bg-black w-[510px] rounded-3xl relative z-8'>
+<div className='bg-black w-[510px] rounded-3xl relative z-8  mt-32'>
 
-<div className='text-white py-8 pl-60'>
-  <p>Amet minim mollit non deserunt <br/> ullamco est sit aliqua dolor do <br/> amet sint. Velit officia consequat <br/> duis enim velit mollit.</p>
+<div className='text-white py-8 pl-60 '>
+  <p>Amet minim mollit non deserunt <br/> ullamco est sit aliqua dolor do<br/> amet sint. Velit officia consequat <br/> duis enim velit mollit.</p>
   <p className='text-[#b4b4b4] pt-3'>Elisa Grant</p>
   <p className='text-[#b4b4b4]'>Legacy Solutions Engineer</p>
   <img className='absolute left-6 bottom-14' src={aboutus1} />
@@ -32,8 +32,7 @@ function Footer() {
     </div>
 
 
-<div className='text-[#999999] bg-black py-4 flex justify-center'>
-
+<div className='text-[#999999] bg-black py-4 px-36 justify-center xl:block lg:block md:hidden sm:hidden hidden'>
 
 <div className='gap-40 flex'>
 <div className='flex gap-10'>
@@ -51,6 +50,24 @@ function Footer() {
   <img className='cursor-pointer' src={Socail} />
 </div>
 </div>
+
+  </div>
+
+
+  <div className='text-[#999999] bg-black py-6 flex justify-center xl:hidden lg:hidden flex-col '>
+
+  <div className='flex justify-center'>
+  <img className='cursor-pointer' src={Socail} />
+</div>
+
+<div className='flex justify-center pt-6 gap-20'>
+  <p>Terms & Conditions</p>
+  <p>Privacy Policy</p>
+  </div>
+
+  <div className='flex justify-center pt-10'>
+  <p>© Copyright 2023, All Rights Reserved by EV.load </p>
+  </div>
 
   </div>
 
