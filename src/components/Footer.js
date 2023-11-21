@@ -7,8 +7,8 @@ import Socail from '../Images/Social.svg'
 function Footer() {
   return (
 
-    <div>
-    <div class="lg:flex justify-center pb-28 gap-24">
+    <div >
+    <div class="lg:flex pl-12 justify-center pb-28 gap-24">
 
 <div className='pt-24' >
     <div>
@@ -32,7 +32,7 @@ function Footer() {
     </div>
 
 
-<div className='text-[#999999] bg-black py-4 px-36 justify-center xl:block lg:block md:hidden sm:hidden hidden'>
+<div className='text-[#999999] w-[100%] bg-black py-4 px-36 justify-center xl:block lg:block md:hidden sm:hidden hidden'>
 
 <div className='gap-40 flex'>
 <div className='flex gap-10'>

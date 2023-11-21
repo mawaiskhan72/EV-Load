@@ -20,8 +20,8 @@ function partnering() {
         <div className="flex-1 h-px bg-gray-300 mt-5"></div>
       </div>
 
-      <div className="max-w-[1250px] mx-auto lg:pl-10 pt-20">
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6 xl:gap-8">
+      <div className="max-w-[1250px] mx-auto pt-20">
+        <div className="grid  pl-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6 xl:gap-8">
           <div className="w-full">
             <img src={Imgone} />
             <p className="text-[#4bac88] font-bold pt-2 text-[25px]">

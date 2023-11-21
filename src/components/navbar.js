@@ -19,7 +19,7 @@ function navbar() {
   return (  
 
 <div>
-<div className='default1 relative z-10'>
+<div className='default1 relative z-10 xl:block lg:hidden md:hidden sm:hidden hidden'>
     <div className='flex justify-center gap-14 pt-16'>
       <div className='flex gap-32'>
   <div>
@@ -103,37 +103,28 @@ function navbar() {
 
 
 
-    <div className='default1 relative z-10'>
-    <div className='flex justify-center gap-14 pt-16'>
-      <div className='flex gap-32'>
+    <div className='default1 relative z-10  xl:hidden lg:block md:block sm:block block'>
+    <div className='flex justify-center gap-80 px-2 pt-16'>
+
   <div>
     <img src={Logo}/>
     </div>
-  
-  
-<div className='flex gap-3'>
-<div class="bg-[#4db38d] w-[200px] px-4 py-2 flex justify-center cursor-pointer rounded-[100px]" >
-<p class="text-white font-bold font-family-Montserrat text-uppercase pt-2 m-0 px-3 py-2">GET A REPORT</p>
-<img className='w-5' src={Icon}/>
-</div>
-  
-<div class="bg-white w-[120px] py-2 flex justify-center cursor-pointer rounded-[100px]" >
-<p class="text-black font-bold font-family-Montserrat text-uppercase  m-0 px-3 py-2">LOG IN</p>
-</div>
-</div>
-</div>
 
 <div className='xl:hidden lg:block md:block sm:block block'>
   <img src={Button} />
 </div>
-
     </div>
 
-    <div className='default flex justify-center pt-44 gap-4'>
+    <div className='default pt-32 flex flex-col items-center'>
+
+      
+<div>
+<img  className='pt-20 pb-12 z-10' src={Machines}/>
+</div>
 
       <div className=''>
       <p className='font-bold text-[40px] text-black'>Accelerate <span className='font-bold text-[40px] text-[#4db38d]'>EV Charging</span></p>
-      <p className='mt-3 font-bold text-[40px] text-black rounded-[200px] bg-white px-8 w-[580px] text-center'>Infrastructure Deployment</p>
+      <p className='mt-3 font-bold text-[40px] text-black rounded-[200px] bg-white text-center'>Infrastructure Deployment</p>
 
       <div className='flex pt-2'>
       <p className='font-semi-bold text-[40px] text-black'>And <span className='font-bold text-[40px] text-black'>Permitting In</span></p>
@@ -142,29 +133,26 @@ function navbar() {
       </div>
 
       <div>
-        <p className='text-[20px]'>For a fraction of time and cost, determine your site’s electrical charging <br/>
-          capacity with our NEC-Compliant cloud native solution</p>
+        <p className='text-[20px]'>For a fraction of time and cost, determine your site’s electrical <br/>
+        charging capacity with our NEC-Compliant cloud native solution</p>
       </div>
 
-    <div className='flex gap-7 pt-10'>
-      <div class="bg-black w-[180px] px-4 py-2 flex justify-center cursor-pointer rounded-[100px]" >
-<p class="text-white  font-bold font-family-Montserrat text-uppercase pt-2 m-0 px-3 py-1">SEE A DEMO</p>
-<img className='w-5' src={Icon}/>
-</div>
-
-<div class="bg-[#4db38d] w-[320px] px-4 py-2 flex justify-center cursor-pointer rounded-[100px]" >
+    <div className='pt-10 flex flex-col items-center'>
+<div class="bg-[#4db38d] w-[350px] px-4 py-1 flex justify-center cursor-pointer rounded-[100px]" >
 <p class="text-white font-bold font-family-Montserrat text-uppercase pt-2 m-0 px-3 py-2">REQUEST A FREE SITE ANALYSIS</p>
 <img className='w-5' src={Icon}/>
 </div>
+
+<div class="bg-black w-[350px] mt-4 mb-14 px-4 py-1 flex justify-center cursor-pointer rounded-[100px]" >
+<p class="text-white  font-bold font-family-Montserrat text-uppercase pt-2 m-0 px-3 py-1">SEE A DEMO</p>
+<img className='w-5' src={Icon}/>
+</div>
 </div>
 </div>
 
-<div>
-<img  className='pt-20 pb-12 z-10' src={Machines}/>
-</div>
 
 <div>
-  <img className='absolute w-60 -z-40 top-48 right-60' src={Vector} />
+  <img className='absolute w-60 -z-40 top-40 right-[400px]' src={Vector} />
 </div>
 
 
