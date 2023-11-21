@@ -119,7 +119,7 @@ function navbar() {
 </div>
 
       <div className=''>
-      <p className='font-bold text-[40px] text-black'>Accelerate <span className='font-bold text-[40px] text-[#4db38d]'>EV Charging</span></p>
+      <p className='font-bold text-[41px] text-black'>Accelerate <span className='font-bold text-[40px] text-[#4db38d]'>EV Charging</span></p>
       <p className='mt-3 font-bold text-[40px] text-black rounded-[200px] bg-white text-center'>Infrastructure Deployment</p>
 
       <div className='flex pt-2'>
