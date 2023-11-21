@@ -54,7 +54,7 @@ function Footer() {
   </div>
 
 
-  <div className='text-[#999999] bg-black py-6 flex justify-center xl:hidden lg:hidden flex-col '>
+  <div className='text-[#999999] w-[100%] bg-black py-6 flex justify-center xl:hidden lg:hidden flex-col '>
 
   <div className='flex justify-center'>
   <img className='cursor-pointer' src={Socail} />

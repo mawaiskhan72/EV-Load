@@ -34,8 +34,9 @@ function Herosection() {
          <img className='w-[20px]' src={Cross} />
          <p className='text-[13px]'>Install meters to record demand for 30 days</p>
          </div>    
+         <img className='absolute z-50 top-12 left-[360px] w-[750px] h-[275px]' src={Meter}/>
         </div>  
-        <img className='absolute right-12  z-50 top-12 w-[750px] h-[275px]' src={Meter}/>
+        
       <div className='w-[30%] absolute right-0 h-[370px] bg-[#3fa780] pl-4 pb-4 rounded-l-[45px]'>
       </div>  
     </div>
@@ -49,10 +50,6 @@ function Herosection() {
     <div className='flex justify-center relative lg:mt-[-54px]'>
 
     <div className='w-[30%] absolute left-0 h-[370px] bg-[#3fa780] pl-4 pb-4 rounded-r-[45px]'>
-      </div>
-
-         <div>
-        <img className='absolute left-12 z-50 top-14 w-[750px] h-[275px]' src={Meter2}/>
       </div>
       
       <div className='hero default2 pl-[240px] ml-56 py-12 absolute'>
@@ -73,7 +70,10 @@ function Herosection() {
          <div className='flex gap-4 text-[#41a983] pt-4'>
          <img className='w-[20px]' src={Tic} />
          <p className='text-[13px]'>No expensive hardware require to record load</p>
-         </div>    
+         </div>  
+         <div>
+        <img className='absolute z-50 top-14 right-[370px] w-[750px] h-[275px]' src={Meter2}/>
+      </div>  
         </div>
     </div>
     </div>

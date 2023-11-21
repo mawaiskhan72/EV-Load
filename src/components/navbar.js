@@ -90,24 +90,15 @@ function navbar() {
 <div>
   <img className='absolute w-60 -z-40 top-48 right-60' src={Vector} />
 </div>
-
-
 </div>
     </div>
-
-
-
-
-
-
-
 
 
     <div className='default1 relative z-10  xl:hidden lg:block md:block sm:block block'>
     <div className='flex justify-center gap-80 px-2 pt-16'>
 
   <div>
-    <img src={Logo}/>
+    <img className='w-10%' src={Logo}/>
     </div>
 
 <div className='xl:hidden lg:block md:block sm:block block'>
@@ -115,11 +106,16 @@ function navbar() {
 </div>
     </div>
 
-    <div className='default pt-32 flex flex-col items-center'>
+    <div className='default relative pt-32 flex flex-col items-center'>
 
+<div>
+    <div>
+  <img className='absolute w-60 -z-40 top-6 left-24 sm:top-8 sm:left-[260px] md:top-10  md:right-[410px]' src={Vector} />
+</div>
       
 <div>
 <img  className='pt-20 pb-12 z-10' src={Machines}/>
+</div>
 </div>
 
       <div className=''>
@@ -148,11 +144,6 @@ function navbar() {
 <img className='w-5' src={Icon}/>
 </div>
 </div>
-</div>
-
-
-<div>
-  <img className='absolute w-60 -z-40 top-40 right-[400px]' src={Vector} />
 </div>
 
 
