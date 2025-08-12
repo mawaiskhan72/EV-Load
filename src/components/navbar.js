@@ -55,21 +55,29 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Sidebar */}
       {menuOpen && (
-        <div className="lg:hidden bg-white shadow-md px-6 py-4 space-y-4">
-          <a href="#home" className="text-black font-bold" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="#product" className="text-gray-500" onClick={() => setMenuOpen(false)}>Product</a>
-          <a href="#partnering" className="text-gray-500" onClick={() => setMenuOpen(false)}>Partnering</a>
-          <a href="#contact" className="text-gray-500" onClick={() => setMenuOpen(false)}>Contact</a>
-          <div className="bg-[#4db38d] px-4 py-2 flex items-center rounded-full cursor-pointer">
-            <p className="text-white font-bold uppercase mr-2">GET A REPORT</p>
-            <img className="w-5" src={Icon} />
+        <>
+          {/* Overlay */}
+          <div
+            className="fixed inset-0 bg-black/40 z-40 lg:hidden"
+            onClick={() => setMenuOpen(false)}
+          />
+          {/* Sidebar Panel */}
+          <div className="fixed inset-y-0 right-0 w-64 bg-white z-50 shadow-lg p-6 flex flex-col gap-4 lg:hidden">
+            <a href="#home" className="text-black font-bold" onClick={() => setMenuOpen(false)}>Home</a>
+            <a href="#product" className="text-gray-700" onClick={() => setMenuOpen(false)}>Product</a>
+            <a href="#partnering" className="text-gray-700" onClick={() => setMenuOpen(false)}>Partnering</a>
+            <a href="#contact" className="text-gray-700" onClick={() => setMenuOpen(false)}>Contact</a>
+            <div className="bg-[#4db38d] px-4 py-2 flex items-center rounded-full cursor-pointer">
+              <p className="text-white font-bold uppercase mr-2">GET A REPORT</p>
+              <img className="w-5" src={Icon} />
+            </div>
+            <div className="bg-white px-4 py-2 flex items-center rounded-full border border-black cursor-pointer">
+              <p className="text-black font-bold uppercase">LOG IN</p>
+            </div>
           </div>
-          <div className="bg-black px-4 py-2 flex items-center rounded-full cursor-pointer">
-            <p className="text-white font-bold uppercase">SEE A DEMO</p>
-          </div>
-        </div>
+        </>
       )}
 
       {/* Hero Section */}

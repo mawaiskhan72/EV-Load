@@ -9,156 +9,113 @@ import Imgsix from "../Images/imgsix.svg";
 import Imgseven from "../Images/imgseven.svg";
 import Imgeight from "../Images/imgeight.svg";
 
-function partnering() {
+function Partnering() {
+  const items = [
+    {
+      img: Imgone,
+      titleGreen: "EV Charging",
+      titleBlack: "Infrastructure Developers",
+      desc: "Leading the charge in creating a sustainable EV charging infrastructure worldwide."
+    },
+    {
+      img: Imgtwo,
+      titleGreen: "Energy Storage",
+      titleBlack: "Developers",
+      desc: "Innovative energy storage developers powering a sustainable future for electric vehicle charging."
+    },
+    {
+      img: Imgthree,
+      titleGreen: "",
+      titleBlack: "Utilities",
+      desc: "Your one-stop source for real-time EV charging data, rates, and availability to help optimize your electric vehicle charging."
+    },
+    {
+      img: Imgfour,
+      titleGreen: "Infrastructure",
+      titleBlack: "Finance Partners",
+      desc: "Connecting EV owners to state and federal funding agencies for efficient charging."
+    },
+    {
+      img: Imgfive,
+      titleGreen: "Engineering",
+      titleBlack: "Firms",
+      desc: "Top engineering firms specializing in electric vehicle infrastructure, innovation, and sustainable energy solutions."
+    },
+    {
+      img: Imgsix,
+      titleGreen: "Permitting",
+      titleBlack: "Authorities",
+      desc: "Connect with local permitting authorities for streamlined EV charging infrastructure approval and compliance guidance."
+    },
+    {
+      img: Imgseven,
+      titleGreen: "Business",
+      titleBlack: "Owners",
+      desc: "Helping business owners integrate EV charging into their properties for customer convenience and sustainability."
+    },
+    {
+      img: Imgeight,
+      titleGreen: "Fleet",
+      titleBlack: "Managers",
+      desc: "Expert fleet managers optimizing electric vehicle operations, enhancing efficiency, and promoting sustainable transportation."
+    }
+  ];
+
   return (
-    <div id="partnering" className="bg-[#f5f5f5] pt-16 pb-16 scroll-mt-24">
-      <div className="flex justify-center">
-        <div className="flex-1 h-px bg-gray-300 mt-5"></div>
-        <div class=" bg-white rounded-[200px] w-[230px] cursor-pointer border border-[#4eb48e] ">
-          <p class="text-center font-bold text-[28px]">Partnering</p>
+    <div
+      id="partnering"
+      className="bg-[#f5f5f5] pt-12 pb-12 scroll-mt-24 overflow-x-hidden" // prevent horizontal scroll
+    >
+      <div className="flex items-center justify-center px-4">
+        <div className="flex-1 h-px bg-gray-300 hidden sm:block"></div>
+        <div className="bg-white rounded-full px-6 py-2 border border-[#4eb48e] mx-4">
+          <p className="text-center font-bold text-lg sm:text-xl md:text-2xl lg:text-[28px]">
+            Partnering
+          </p>
         </div>
-        <div className="flex-1 h-px bg-gray-300 mt-5"></div>
+        <div className="flex-1 h-px bg-gray-300 hidden sm:block"></div>
       </div>
 
-      <div className="max-w-[1250px] mx-auto pt-20">
-        <div className="grid  pl-12 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-6 xl:gap-8">
-          <div className="w-full">
-            <img src={Imgone} />
-            <p className="text-[#4bac88] font-bold pt-2 text-[25px]">
-              EV Charging{" "}
-            </p>
-
-            <span className="text-black font-bold text-[23px] w-full">Infrastructure Developers</span>
-
-            <p className="pt-2 text-[16px]">
-              Leading the charge in creating a sustainable EV charging
-              infrastructure worldwide.
-            </p>
-
-            <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
-              <p>CONTACT US</p>
-              <img src={Arrow} />
+      <div className="w-full px-4 pt-10">
+        <div
+          className="
+            grid gap-8
+            grid-cols-1
+            sm:grid-cols-2
+            md:grid-cols-2
+            lg:grid-cols-3
+            xl:grid-cols-4
+            max-w-[1250px] mx-auto
+          "
+        >
+          {items.map((item, index) => (
+            <div key={index} className="w-full text-center sm:text-left">
+              <img
+                src={item.img}
+                alt={item.titleBlack}
+                className="w-full h-auto max-w-full"
+              />
+              <p className="text-[#4bac88] font-bold pt-2 text-lg sm:text-xl md:text-2xl">
+                {item.titleGreen}{" "}
+                {item.titleBlack && (
+                  <span className="text-black">{item.titleBlack}</span>
+                )}
+              </p>
+              <p className="pt-2 text-sm sm:text-base text-gray-700">
+                {item.desc}
+              </p>
+              <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer items-center justify-center sm:justify-start">
+                <p className="text-sm sm:text-base">CONTACT US</p>
+                <img src={Arrow} alt="Arrow" className="w-4 sm:w-5" />
+              </div>
             </div>
-          </div>
-
-          <div className="w-full">
-            <img src={Imgtwo} />
-            <p className="text-[#4bac88] font-bold pt-2 text-[23px]">
-              Energy Storage</p>
-              <p className="text-black font-bold text-[23px]">Developers</p>
-            <p className="pt-2 text-[16px] pe-6">
-              Innovative energy storage developers powering a sustainable future
-              for electric vehicle charging.
-            </p>
-
-            <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
-              <p>CONTACT US</p>
-              <img src={Arrow} />
-            </div>
-          </div>
-
-          <div className="w-full">
-            <img src={Imgthree} />
-            <p className="text-black font-bold pt-2 text-[23px]">Utilities</p>
-            <p className="pt-2 text-[16px]">
-              Your one-stop source for real-time EV charging data, rates, and
-              availability to help optimize your electric vehicle <br />{" "}
-              charging.
-            </p>
-
-            <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
-              <p>CONTACT US</p>
-              <img src={Arrow} />
-            </div>
-          </div>
-
-          <div className="w-full">
-            <img src={Imgfour} />
-            <p className="text-[#4bac88] font-bold pt-2 text-[25px]">
-              Infrastructure </p>
-              <p className="text-black font-bold text-[22px]"> Finance Partners</p>
-            
-            <p className="pt-2 text-[16px] ">
-              Connecting EV owners to state and federal funding agencies for
-              efficient charging.
-            </p>
-
-            <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
-              <p>CONTACT US</p>
-              <img src={Arrow} />
-            </div>
-          </div>
-
-          <div className="w-full">
-            <img src={Imgfive} />
-            <p className="text-[#4bac88] text-[26px] font-bold pt-2">
-              Engineering <span className="text-black">Firms</span>{" "}
-            </p>
-            <p className="pt-2 text-[16px]">
-              Top engineering firms specializing in electric vehicle
-              infrastructure, innovation, and sustainable energy solutions.
-              Leading the EV revolution.
-            </p>
-
-            <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
-              <p>CONTACT US</p>
-              <img src={Arrow} />
-            </div>
-          </div>
-
-          <div className="w-full">
-            <img src={Imgsix} />
-            <p className="text-[#4bac88] gap-2 text-[25px] font-bold pt-2">
-              Permitting<span className="text-black"> Authorities</span>{" "}
-            </p>
-            <p className="pt-2 text-[16px]">
-              Connect with local permitting authorities for streamlined EV
-              charging infrastructure approval and compliance guidance.
-            </p>
-
-            <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
-              <p>CONTACT US</p>
-              <img src={Arrow} />
-            </div>
-          </div>
-
-          <div className="w-full">
-            <img src={Imgseven} />
-            <p className="text-[#4bac88] text-[25px] font-bold pt-2">
-              Business<span className="text-black"> Owners</span>{" "}
-            </p>
-            <p className="pt-2 text-[16px]">
-              Connect with local permitting authorities for streamlined EV
-              charging infrastructure approval and compliance guidance.
-            </p>
-
-            <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
-              <p>CONTACT US</p>
-              <img src={Arrow} />
-            </div>
-          </div>
-
-          <div className="w-full">
-            <img src={Imgeight} />
-            <p className="text-[#4bac88] text-[25px] font-bold pt-2">
-              Fleet<span className="text-black"> Managers</span>{" "}
-            </p>
-            <p className="pt-2 text-[16px]">
-              Expert fleet managers optimizing electric vehicle operations,
-              enhancing efficiency, and promoting sustainable transportation on
-              our website.
-            </p>
-
-            <div className="flex gap-3 pt-3 text-[#4bac88] font-bold cursor-pointer">
-              <p>CONTACT US</p>
-              <img src={Arrow} />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-      <div class="border-t border-green-700 mt-12 mb-14"></div>
+
+      <div className="border-t border-green-700 mt-12 mb-8"></div>
     </div>
   );
 }
 
-export default partnering;
+export default Partnering;
