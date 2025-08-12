@@ -9,7 +9,7 @@ import Line from '../Images/line.svg'
 function Herosection() {
   return (
 
-    <div>
+    <div id="home" className="scroll-mt-24">
 
    
     <div className='xl:block lg:block md:hidden sm:hidden hidden'>

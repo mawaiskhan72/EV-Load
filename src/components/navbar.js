@@ -1,170 +1,137 @@
-import React from 'react'
-import BackgroundImg from '../Images/backgroundimg.png'
-import Logo from '../Images/logo.svg'
-import Icon from '../Images/icon.svg'
-import Canada from '../Images/CA.svg'
-import US from '../Images/US.svg'
-import Vector from '../Images/Vector.svg'
-import Sliderimg1 from '../Images/sliderimg1.svg'
-import Sliderimg2 from '../Images/sliderimg2.svg'
-import Sliderimg3 from '../Images/sliderimg3.svg'
-import Sliderimg4 from '../Images/sliderimg4.svg'
-import Sliderimg5 from '../Images/sliderimg5.svg'
-import Sliderimg6 from '../Images/sliderimg6.svg'
-import Machines from '../Images/machines.svg'
+import React, { useState } from "react";
+import BackgroundImg from "../Images/backgroundimg.png";
+import Logo from "../Images/logo.svg";
+import Icon from "../Images/icon.svg";
+import Canada from "../Images/CA.svg";
+import US from "../Images/US.svg";
+import Vector from "../Images/Vector.svg";
+import Sliderimg1 from "../Images/sliderimg1.svg";
+import Sliderimg2 from "../Images/sliderimg2.svg";
+import Sliderimg3 from "../Images/sliderimg3.svg";
+import Sliderimg4 from "../Images/sliderimg4.svg";
+import Sliderimg5 from "../Images/sliderimg5.svg";
+import Sliderimg6 from "../Images/sliderimg6.svg";
+import Machines from "../Images/machines.svg";
 import Marquee from "react-fast-marquee";
-import Button from '../Images/btn.png'
+import Button from "../Images/btn.png";
 
-function navbar() {
-  return (  
+function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-<div>
-<div className='default1 relative z-10 xl:block lg:hidden md:hidden sm:hidden hidden'>
-    <div className='flex justify-center gap-14 pt-16'>
-      <div className='flex gap-32'>
-  <div>
-    <img src={Logo}/>
-    </div>
-  
-  <div >
-  <div className='flex gap-20'>
-  <div class="bg-white m-0 px-10 py-4 gap-12 cursor-pointer flex justify-center rounded-[100px] w-[450px]">
-  <p class="text-black font-family-Montserrat font-bold bottom">Home</p>
-  <p class="font-family-Montserrat text-gray-500 bottom">Product</p>
-  <p class="font-family-Montserrat text-gray-500 bottom">Partnering</p>
-  <p class="font-family-Montserrat text-gray-500 bottom ">Contact</p>
-  </div>
-  </div>
+  return (
+    <div className="relative z-10">
+      {/* Navbar */}
+      <div className="flex justify-between items-center px-6 py-4 bg-transparent">
+        {/* Logo */}
+        <img src={Logo} alt="Logo" className="w-32 md:w-40" />
 
-  </div>
-  
-<div className='flex gap-3'>
-<div class="bg-[#4db38d] w-[200px] px-4 py-2 flex justify-center cursor-pointer rounded-[100px]" >
-<p class="text-white font-bold font-family-Montserrat text-uppercase pt-2 m-0 px-3 py-2">GET A REPORT</p>
-<img className='w-5' src={Icon}/>
-</div>
-  
-<div class="bg-white w-[120px] py-2 flex justify-center cursor-pointer rounded-[100px]" >
-<p class="text-black font-bold font-family-Montserrat text-uppercase  m-0 px-3 py-2">LOG IN</p>
-</div>
-</div>
-</div>
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex gap-12 items-center">
+          <div className="bg-white px-8 py-3 rounded-full flex gap-8">
+            <a href="#home" className="text-black font-bold cursor-pointer">Home</a>
+            <a href="#product" className="text-gray-500 cursor-pointer">Product</a>
+            <a href="#partnering" className="text-gray-500 cursor-pointer">Partnering</a>
+            <a href="#contact" className="text-gray-500 cursor-pointer">Contact</a>
+          </div>
+          <div className="flex gap-3">
+            <div className="bg-[#4db38d] px-4 py-2 flex items-center rounded-full cursor-pointer">
+              <p className="text-white font-bold uppercase mr-2">GET A REPORT</p>
+              <img className="w-5" src={Icon} />
+            </div>
+            <div className="bg-white px-4 py-2 flex items-center rounded-full cursor-pointer">
+              <p className="text-black font-bold uppercase">LOG IN</p>
+            </div>
+          </div>
+        </div>
 
-
-    </div>
-
-    <div className='default flex justify-center pt-44 gap-4'>
-
-      <div className=''>
-      <p className='font-bold text-[40px] text-black'>Accelerate <span className='font-bold text-[40px] text-[#4db38d]'>EV Charging</span></p>
-      <p className='mt-3 font-bold text-[40px] text-black rounded-[200px] bg-white px-8 w-[580px] text-center'>Infrastructure Deployment</p>
-
-      <div className='flex pt-2'>
-      <p className='font-semi-bold text-[40px] text-black'>And <span className='font-bold text-[40px] text-black'>Permitting In</span></p>
-      <img className='pt-[16px]' src={Canada}/>
-      <img className='pt-[16px]' src={US}/>
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden">
+          <img
+            src={Button}
+            alt="Menu"
+            className="w-10 cursor-pointer"
+            onClick={() => setMenuOpen(!menuOpen)}
+          />
+        </div>
       </div>
 
-      <div>
-        <p className='text-[20px]'>For a fraction of time and cost, determine your site’s electrical charging <br/>
-          capacity with our NEC-Compliant cloud native solution</p>
+      {/* Mobile Dropdown */}
+      {menuOpen && (
+        <div className="lg:hidden bg-white shadow-md px-6 py-4 space-y-4">
+          <a href="#home" className="text-black font-bold" onClick={() => setMenuOpen(false)}>Home</a>
+          <a href="#product" className="text-gray-500" onClick={() => setMenuOpen(false)}>Product</a>
+          <a href="#partnering" className="text-gray-500" onClick={() => setMenuOpen(false)}>Partnering</a>
+          <a href="#contact" className="text-gray-500" onClick={() => setMenuOpen(false)}>Contact</a>
+          <div className="bg-[#4db38d] px-4 py-2 flex items-center rounded-full cursor-pointer">
+            <p className="text-white font-bold uppercase mr-2">GET A REPORT</p>
+            <img className="w-5" src={Icon} />
+          </div>
+          <div className="bg-black px-4 py-2 flex items-center rounded-full cursor-pointer">
+            <p className="text-white font-bold uppercase">SEE A DEMO</p>
+          </div>
+        </div>
+      )}
+
+      {/* Hero Section */}
+      <div className="flex flex-col lg:flex-row items-center justify-center px-6 lg:px-20 pt-10 lg:pt-20 relative">
+        {/* Text */}
+        <div className="max-w-xl text-center lg:text-left">
+          <p className="font-bold text-3xl lg:text-5xl text-black">
+            Accelerate{" "}
+            <span className="text-[#4db38d]">EV Charging</span>
+          </p>
+          <p className="mt-3 font-bold text-2xl lg:text-4xl bg-white rounded-full px-6 py-2 inline-block">
+            Infrastructure Deployment
+          </p>
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 mt-4">
+            <p className="text-xl font-semibold">
+              And <span className="font-bold">Permitting In</span>
+            </p>
+            <img src={Canada} className="w-8" />
+            <img src={US} className="w-8" />
+          </div>
+          <p className="mt-4 text-gray-700 text-lg">
+            For a fraction of time and cost, determine your site’s electrical
+            charging capacity with our NEC-Compliant cloud native solution
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
+            <div className="bg-black px-6 py-3 flex items-center rounded-full cursor-pointer">
+              <p className="text-white font-bold uppercase mr-2">SEE A DEMO</p>
+              <img className="w-5" src={Icon} />
+            </div>
+            <div className="bg-[#4db38d] px-6 py-3 flex items-center rounded-full cursor-pointer">
+              <p className="text-white font-bold uppercase mr-2">
+                REQUEST A FREE SITE ANALYSIS
+              </p>
+              <img className="w-5" src={Icon} />
+            </div>
+          </div>
+        </div>
+
+        {/* Image */}
+        <div className="mt-10 lg:mt-0 relative">
+          <img src={Machines} alt="Machines" className="max-w-xs lg:max-w-md" />
+          <img
+            className="absolute w-40 -z-10 top-0 right-0"
+            src={Vector}
+            alt="Vector"
+          />
+        </div>
       </div>
 
-    <div className='flex gap-7 pt-10'>
-      <div class="bg-black w-[180px] px-4 py-2 flex justify-center cursor-pointer rounded-[100px]" >
-<p class="text-white  font-bold font-family-Montserrat text-uppercase pt-2 m-0 px-3 py-1">SEE A DEMO</p>
-<img className='w-5' src={Icon}/>
-</div>
-
-<div class="bg-[#4db38d] w-[320px] px-4 py-2 flex justify-center cursor-pointer rounded-[100px]" >
-<p class="text-white font-bold font-family-Montserrat text-uppercase pt-2 m-0 px-3 py-2">REQUEST A FREE SITE ANALYSIS</p>
-<img className='w-5' src={Icon}/>
-</div>
-</div>
-</div>
-
-<div>
-<img  className='pt-20 pb-12 z-10' src={Machines}/>
-</div>
-
-<div>
-  <img className='absolute w-60 -z-40 top-48 right-60' src={Vector} />
-</div>
-</div>
+      {/* Logo Slider */}
+      <Marquee>
+        <div className="flex gap-20 py-16 px-10">
+          <img src={Sliderimg1} />
+          <img src={Sliderimg2} />
+          <img src={Sliderimg3} />
+          <img src={Sliderimg4} />
+          <img src={Sliderimg5} />
+          <img src={Sliderimg6} />
+        </div>
+      </Marquee>
     </div>
-
-
-    <div className='default1 relative z-10  xl:hidden lg:block md:block sm:block block'>
-    <div className='flex justify-center gap-80 px-2 pt-16'>
-
-  <div>
-    <img className='w-10%' src={Logo}/>
-    </div>
-
-<div className='xl:hidden lg:block md:block sm:block block'>
-  <img src={Button} />
-</div>
-    </div>
-
-    <div className='default relative pt-32 flex flex-col items-center'>
-
-<div>
-    <div>
-  <img className='absolute w-60 -z-40 top-6 left-24 sm:top-8 sm:left-[260px] md:top-10  md:right-[410px]' src={Vector} />
-</div>
-      
-<div>
-<img  className='pt-20 pb-12 z-10' src={Machines}/>
-</div>
-</div>
-
-      <div className=''>
-      <p className='font-bold text-[41px] text-black'>Accelerate <span className='font-bold text-[40px] text-[#4db38d]'>EV Charging</span></p>
-      <p className='mt-3 font-bold text-[40px] text-black rounded-[200px] bg-white text-center'>Infrastructure Deployment</p>
-
-      <div className='flex pt-2'>
-      <p className='font-semi-bold text-[40px] text-black'>And <span className='font-bold text-[40px] text-black'>Permitting In</span></p>
-      <img className='pt-[16px]' src={Canada}/>
-      <img className='pt-[16px]' src={US}/>
-      </div>
-
-      <div>
-        <p className='text-[20px]'>For a fraction of time and cost, determine your site’s electrical <br/>
-        charging capacity with our NEC-Compliant cloud native solution</p>
-      </div>
-
-    <div className='pt-10 flex flex-col items-center'>
-<div class="bg-[#4db38d] w-[350px] px-4 py-1 flex justify-center cursor-pointer rounded-[100px]" >
-<p class="text-white font-bold font-family-Montserrat text-uppercase pt-2 m-0 px-3 py-2">REQUEST A FREE SITE ANALYSIS</p>
-<img className='w-5' src={Icon}/>
-</div>
-
-<div class="bg-black w-[350px] mt-4 mb-14 px-4 py-1 flex justify-center cursor-pointer rounded-[100px]" >
-<p class="text-white  font-bold font-family-Montserrat text-uppercase pt-2 m-0 px-3 py-1">SEE A DEMO</p>
-<img className='w-5' src={Icon}/>
-</div>
-</div>
-</div>
-
-
-</div>
-    </div>
-  <Marquee>
-    <div className='flex justify-center pt-16 pb-16 space-x-20'>
-    <img src={Sliderimg1} />
-    <img src={Sliderimg2} />
-    <img src={Sliderimg3} />
-    <img src={Sliderimg4} />
-    <img src={Sliderimg5} />
-    <img src={Sliderimg6} />
-</div>
-  </Marquee>
-
-    
-    </div>
-
-    
-  )
+  );
 }
 
-export default navbar
+export default Navbar;

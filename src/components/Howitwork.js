@@ -3,7 +3,7 @@ import Tick from "../Images/tic.svg"
 
 function HowItWorks() {
   return (
-    <div className="bg-gray-100 mt-[450px] border border-t-[rgba(75,172,137,0.79)] border-b-[#4bac89ca] max-lg:flex max-lg:flex-col max-lg:justify-center ">
+    <div id="product" className="bg-gray-100 mt-[450px] border border-t-[rgba(75,172,137,0.79)] border-b-[#4bac89ca] max-lg:flex max-lg:flex-col max-lg:justify-center scroll-mt-24">
       <div className="max-w-[1400px] xl:w-[1000px] min-[1400px]:w-[1400px] 2xl:w-[1310px] lg:w-[900px] mx-auto">
         <p className="cursor-pointer px-[10px] py-[10px] mt-[-25px] w-[280px] mx-auto bg-white border-[1px] border-[#4BAC88] text-black rounded-full text-[30px] leading-[30px] font-bold text-center">
           How It <span className="text-[#4BAC88]">Works</span>

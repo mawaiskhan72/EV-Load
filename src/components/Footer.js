@@ -7,7 +7,7 @@ import Socail from '../Images/Social.svg'
 function Footer() {
   return (
 
-    <div >
+    <div id="contact" className="scroll-mt-24">
     <div class="lg:flex pl-12 justify-center pb-28 gap-24">
 
 <div className='pt-24' >
